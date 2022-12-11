@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditPriceFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.crudUI.UpdateProductActivity">
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="197dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="90dp"
+            android:text="تعديل السعر"
+            android:background="@color/colorapps"
+            app:backgroundTint="@null"
+            android:textColor="#ffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customer_card" />
+
+        <TextView
+            android:id="@+id/update_titel"
+            style="@style/textStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+
+            android:textSize="18dp"
+            android:background="@drawable/gray_rounded_filled20"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="تعديل سعر منتج "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_qrUpdate"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginStart="28dp"
+
+
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/blue_rounded_filled20"
+            android:src="@drawable/ic_qr"
+            app:layout_constraintEnd_toStartOf="@+id/scanQr"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update_titel"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/scanQr"
+            style="@style/textStyle"
+            android:layout_width="176dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/blue_border"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="اختر صنف : QrCode "
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update_titel" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="25dp"
+            android:layout_height="27dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/btn_qrUpdate"
+            app:layout_constraintStart_toStartOf="@+id/btn_qrUpdate"
+            app:layout_constraintTop_toBottomOf="@+id/btn_qrUpdate" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/customer_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="40dp"
+            android:padding="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/scanQr"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="223dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="40dp"
+
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/blue_border"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+
+                    app:layout_constraintEnd_toStartOf="@+id/textView4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView4"
+                    tools:text="TEXT" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="223dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="40dp"
+
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/blue_border"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+
+                    app:layout_constraintEnd_toStartOf="@+id/textView6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="223dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/blue_border"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+
+                    app:layout_constraintEnd_toStartOf="@+id/textView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+
+                    android:layout_marginEnd="32dp"
+
+                    android:text="سعر الحاللى:"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    style="@style/textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="ادخل السعر الجديد:"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <EditText
+                    android:id="@+id/new_price"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/blue_border"
+
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toStartOf="@+id/textView44"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView44"
+                    tools:text="TEXT" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="كود المنتج  :"
+                    app:layout_constraintBottom_toTopOf="@+id/textView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="32dp"
+
+                    android:text="اسم المنتج :"
+                    app:layout_constraintBottom_toTopOf="@+id/textView6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

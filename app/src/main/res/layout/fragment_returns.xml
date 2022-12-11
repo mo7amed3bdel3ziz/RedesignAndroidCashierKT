@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ReturnsFragment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.invoice.ItemsActivity">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="36dp"
+                android:layout_height="19dp"
+                android:ems="10"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:background="@android:drawable/editbox_background"
+                android:padding="10dp"
+                android:text="تسجيل العمليه مرتجع"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_qr1"
+                app:layout_constraintEnd_toStartOf="@+id/btn_qr1"
+                app:layout_constraintTop_toTopOf="@+id/btn_qr1" />
+
+            <Button
+                android:id="@+id/SearcheCode1"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/blue_rounded_filled20"
+                android:text=" ابحث "
+                android:textColor="#fff"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/testView1"
+                app:layout_constraintEnd_toStartOf="@+id/testView1"
+                app:layout_constraintTop_toTopOf="@+id/testView1"
+                app:tint="@color/white" />
+
+
+            <Button
+                android:id="@+id/payWay1"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/blue_rounded_filled20"
+                android:text="انتقال للدفع "
+                android:textColor="#fff"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scanQr1"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/btn_qr1"
+                android:layout_width="70dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/qr_test_color"
+                android:src="@drawable/ic_qr"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <EditText
+                android:id="@+id/testView1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="85dp"
+
+                android:layout_marginEnd="50dp"
+                android:background="@android:drawable/editbox_background"
+                android:drawableEnd="@drawable/ic_baseline_search_24"
+                android:gravity="center_vertical"
+                android:hint=" اضف منتج بالبار كود "
+
+                android:padding="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/Totals1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="0.0"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/scanQr1"
+                app:layout_constraintTop_toBottomOf="@+id/billRecycler1" />
+
+            <TextView
+                android:id="@+id/farora1"
+                style="@style/textStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/gray_rounded_filled20"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="الفاتورة  "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout1"
+                app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/gray_rounded_filled20"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/billRecycler1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/farora1">
+
+                <TextView
+                    android:id="@+id/textView491"
+                    style="@style/textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="0.16"
+                    android:gravity="center"
+                    android:text="الإجمالي"
+                    android:textColor="#185EA3" />
+
+
+                <TextView
+                    android:id="@+id/textView471"
+                    style="@style/textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="0.16"
+                    android:gravity="center"
+                    android:text="السعر"
+                    android:textColor="#F76B69" />
+
+
+                <TextView
+                    android:id="@+id/textView431"
+                    style="@style/textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="0.16"
+                    android:gravity="center"
+                    android:text="الكمية"
+
+
+                    android:textColor="#F3B5BA" />
+
+                <TextView
+                    android:id="@+id/textView421"
+                    style="@style/textStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="0.16"
+                    android:gravity="center"
+                    android:text="الإسم" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/scanQr1"
+                style="@style/textStyle"
+                android:layout_width="160dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/blue_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="إجمالى الفاتورة : "
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/billRecycler1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/billRecycler1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/gray_rounded_filled20"
+                android:nestedScrollingEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/saleFragment">
+
+    <fragment
+        android:id="@+id/saleFragment"
+        android:name="com.example.redesignandroidcashierkt.ui.home.HomeFragment"
+        android:label="البيع"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.example.redesignandroidcashierkt.AddProductFragment"
+        android:label="اضافة منتج"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/editPriceFragment"
+        android:name="com.example.redesignandroidcashierkt.EditPriceFragment"
+        android:label="تعديل سعر المنتج"
+        tools:layout="@layout/fragment_edit_price" />
+    <fragment
+        android:id="@+id/returnsFragment"
+        android:name="com.example.redesignandroidcashierkt.ReturnsFragment"
+        android:label="المرتجات"
+        tools:layout="@layout/fragment_returns" />
+    <fragment
+        android:id="@+id/closedFragment"
+        android:name="com.example.redesignandroidcashierkt.ClosedFragment"
+        android:label="اغلاق اليومية"
+        tools:layout="@layout/fragment_closed" />
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.example.redesignandroidcashierkt.ReportsFragment"
+        android:label="التقارير"
+        tools:layout="@layout/fragment_reports" />
+
+
+</navigation>
